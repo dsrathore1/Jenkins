@@ -11,4 +11,7 @@ app.get("/", (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Your site is live on http://localhost:${PORT}`);
+    setTimeout(() => {
+        process.exit(0);
+    }, 2000)
 });
